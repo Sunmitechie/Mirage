@@ -3,7 +3,7 @@ from django.db import models
 class User(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
-    password = models.CharField(max_length=255)  # Will be hashed
+    password = models.CharField(max_length=255)  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -12,7 +12,7 @@ class User(models.Model):
 class AIProfile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="ai_profiles")
     voice_url = models.URLField()
-    personality_traits = models.JSONField()  # Stores AI personality details
+    personality_traits = models.JSONField()  
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
