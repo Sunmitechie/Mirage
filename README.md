@@ -28,7 +28,7 @@ SQLite/PostgreSQL (Database)
 AI Integration
 OpenAI API (for AI-generated responses)
 
-ElevenLabs API (for voice cloning - optional)
+ElevenLabs API (for voice cloning)
 
 Deployment
 Railway / Render / Vercel (For free deployment)
